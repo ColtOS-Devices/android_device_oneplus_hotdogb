@@ -12,7 +12,7 @@ $(call inherit-product, vendor/oneplus/hotdogb/hotdogb-vendor.mk)
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-xtended
+    $(LOCAL_PATH)/overlay-colt
 
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
     $(LOCAL_PATH)/overlay-lineage/frameworks/base/packages/SystemUI

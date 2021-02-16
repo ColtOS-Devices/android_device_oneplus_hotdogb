@@ -11,14 +11,14 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from hotdogb device
 $(call inherit-product, device/oneplus/hotdogb/device.mk)
 
-# Inherit some common xtended stuff.
-$(call inherit-product, vendor/xtended/config/common_full_phone.mk)
+# Inherit some common colt stuff.
+$(call inherit-product, vendor/colt/config/common.mk)
 
 # Inherit GApps
 $(call inherit-product, vendor/google/gms/config.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := xtended_hotdogb
+PRODUCT_NAME := colt_hotdogb
 PRODUCT_DEVICE := hotdogb
 PRODUCT_BRAND := OnePlus
 PRODUCT_MODEL := OnePlus 7T
@@ -39,7 +39,6 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     
 PRODUCT_GMS_CLIENTID_BASE := android-oneplus
 
-XTENDED_BUILD_TYPE := OFFICIAL
+COLT_BUILD_TYPE := OFFICIAL
 
-# Maintainer
-XTENDED_MAINTAINER := mady51_mukesh22584
+COLT_MAINTAINER := mady51

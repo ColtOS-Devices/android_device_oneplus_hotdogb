@@ -5,4 +5,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/xtended_hotdogb.mk
+    $(LOCAL_DIR)/colt_hotdogb.mk
